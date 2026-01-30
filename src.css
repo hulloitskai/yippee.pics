@@ -2,11 +2,12 @@
 
 @theme {
   --font-sans: "Figtree", sans-serif;
+  --font-cursive: "Single Day", cursive;
 }
 
 @layer base {
   :root {
-    @apply font-sans bg-neutral-50 dark:bg-neutral-950;
+    @apply font-sans bg-neutral-50 dark:bg-neutral-900;
   }
 
   button:not(:disabled),
@@ -23,8 +24,16 @@
   .pics {
     @apply flex flex-wrap gap-4 max-w-5xl mx-auto justify-center;
 
-    > img {
-      @apply h-96 p-4 pb-6 shadow-xl bg-white min-w-60;
+    figure {
+      @apply bg-white shadow-xl p-4 min-w-60 flex flex-col items-stretch gap-y-3;
+    }
+
+    img {
+      @apply h-96;
+    }
+
+    figcaption {
+      @apply text-center block font-cursive text-xl italic;
     }
   }
 }
