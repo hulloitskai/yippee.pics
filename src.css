@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", sans-serif;
+}
+
+@layer base {
+  :root {
+    @apply font-sans bg-neutral-50 dark:bg-neutral-950;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  a {
+    @apply hover:underline;
+  }
+}
+
+@layer components {
+  .pics {
+    @apply flex flex-wrap gap-4 max-w-5xl mx-auto justify-center;
+
+    > img {
+      @apply h-96 p-4 pb-6 shadow-xl bg-white;
+    }
+  }
+}
