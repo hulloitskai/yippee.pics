@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Figtree", sans-serif;
-  --font-cursive: "Single Day", cursive;
+  --font-sans: Figtree, sans-serif;
+  --font-cursive: "Sour Gummy", cursive;
 }
 
 @layer base {
   :root {
-    @apply font-sans bg-neutral-800;
+    @apply font-cursive bg-neutral-800;
   }
 
   button:not(:disabled),
@@ -33,7 +33,7 @@
     }
 
     figcaption {
-      @apply text-center block font-cursive text-xl italic;
+      @apply text-center block font-sans text-xl italic font-semibold;
     }
   }
 }
