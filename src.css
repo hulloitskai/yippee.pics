@@ -25,7 +25,7 @@
     @apply flex flex-wrap gap-4 max-w-5xl mx-auto justify-center;
 
     figure {
-      @apply bg-white shadow-xl p-4 min-w-60 flex flex-col items-stretch gap-y-3;
+      @apply bg-red-500 shadow-xl p-4 min-w-60 flex flex-col items-stretch gap-y-3;
     }
 
     img {
